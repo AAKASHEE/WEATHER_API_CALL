@@ -1,4 +1,4 @@
-'ve created a modular Weather App with the following structure:
+I 've created a modular Weather App with the following structure:
 
 Components:
 
