@@ -16,3 +16,12 @@ Replace YOUR_API_KEY in weatherApi.ts with your OpenWeatherMap API key
 Enter a city name and click Search
 View the weather information including temperature, humidity, and conditions
 The app features error handling, TypeScript support, and a clean UI with Tailwind CSS.
+
+
+Jst clone the repositories:
+prerequirements:
+git 
+npm 
+node
+
+after cloning through github,open in terminal, type npm run dev to view in Development environment.
