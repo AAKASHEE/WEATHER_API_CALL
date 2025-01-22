@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import { SearchBar } from './components/SearchBar';
 import { WeatherDisplay } from './components/WeatherDisplay';
 import { getWeather } from './services/weatherApi';
@@ -20,12 +21,14 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4">
-      <div className="max-w-md mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-8">Weather App</h1>
+    <div className="min-h-screen bg-gradient-to-br from-blue-400 to-blue-800 py-12 px-4 text-white">
+      <div className="max-w-lg mx-auto bg-white bg-opacity-20 backdrop-blur-lg rounded-lg shadow-lg p-8">
+        <h1 className="text-4xl font-extrabold text-center mb-6 drop-shadow-lg">
+          ☀️ Weather App 🌦️
+        </h1>
         <SearchBar onSearch={handleSearch} />
         {error && (
-          <p className="text-red-500 text-center mb-4">{error}</p>
+          <p className="text-red-300 text-center font-medium mt-4">{error}</p>
         )}
         {weather && <WeatherDisplay weather={weather} />}
       </div>
