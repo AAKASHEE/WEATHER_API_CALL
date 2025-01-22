@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Weather Animations */
+@keyframes rain {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+}
+
+@keyframes snow {
+  0% {
+    transform: translateY(-10%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10%) rotate(360deg);
+  }
+}
+
+@keyframes thunder {
+  0%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes mist {
+  0% {
+    filter: blur(2px);
+    opacity: 0.5;
+  }
+  50% {
+    filter: blur(4px);
+    opacity: 0.8;
+  }
+  100% {
+    filter: blur(2px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes tornado {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes drizzle {
+  0% {
+    transform: translateY(-5%) translateX(-5%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(5%) translateX(5%);
+    opacity: 0;
+  }
+}
+
+@keyframes fog {
+  0%, 100% {
+    filter: blur(3px);
+    opacity: 0.7;
+  }
+  50% {
+    filter: blur(5px);
+    opacity: 0.9;
+  }
+}
+
+@keyframes dust {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(5px) rotate(180deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+    opacity: 0.6;
+  }
+}
+
+@keyframes squall {
+  0% {
+    transform: translateX(0) skewX(0deg);
+  }
+  50% {
+    transform: translateX(10px) skewX(-10deg);
+  }
+  100% {
+    transform: translateX(0) skewX(0deg);
+  }
+}
+
+.animate-rain {
+  animation: rain 1s infinite;
+}
+
+.animate-snow {
+  animation: snow 2s infinite linear;
+}
+
+.animate-thunder {
+  animation: thunder 2s infinite;
+}
+
+.animate-mist {
+  animation: mist 3s infinite;
+}
+
+.animate-tornado {
+  animation: tornado 3s infinite linear;
+}
+
+.animate-drizzle {
+  animation: drizzle 2s infinite;
+}
+
+.animate-fog {
+  animation: fog 4s infinite;
+}
+
+.animate-dust {
+  animation: dust 3s infinite;
+}
+
+.animate-squall {
+  animation: squall 2s infinite;
+}
+
+/* Weather Background Gradients */
+.bg-clear {
+  @apply bg-gradient-to-br from-yellow-400 to-orange-500;
+}
+
+.bg-clouds {
+  @apply bg-gradient-to-br from-gray-300 to-gray-500;
+}
+
+.bg-rain {
+  @apply bg-gradient-to-br from-blue-400 to-blue-600;
+}
+
+.bg-thunderstorm {
+  @apply bg-gradient-to-br from-gray-700 to-gray-900;
+}
+
+.bg-snow {
+  @apply bg-gradient-to-br from-blue-50 to-blue-200;
+}
+
+.bg-mist {
+  @apply bg-gradient-to-br from-gray-400 to-gray-600;
+}
+
+.bg-smoke {
+  @apply bg-gradient-to-br from-gray-600 to-gray-800;
+}
+
+.bg-haze {
+  @apply bg-gradient-to-br from-yellow-200 to-yellow-400;
+}
+
+.bg-dust {
+  @apply bg-gradient-to-br from-yellow-600 to-yellow-800;
+}
+
+.bg-fog {
+  @apply bg-gradient-to-br from-gray-300 to-gray-500;
+}
+
+.bg-sand {
+  @apply bg-gradient-to-br from-yellow-500 to-yellow-700;
+}
+
+.bg-ash {
+  @apply bg-gradient-to-br from-gray-500 to-gray-700;
+}
+
+.bg-squall {
+  @apply bg-gradient-to-br from-blue-700 to-blue-900;
+}
+
+.bg-tornado {
+  @apply bg-gradient-to-br from-gray-800 to-gray-900;
+}
