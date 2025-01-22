@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                   // Set to the ECMAScript version you are using
+    "allowJs": true,                       // Allows JavaScript files to be processed
+    "checkJs": true,                        // Enable error reporting in JS files
+    "strict": true,                         // Enable all strict type-checking options
+    "noEmit": true,                         // Prevents generating output files
+    "module": "ESNext",                      // Change module type if needed (CommonJS, ESNext, etc.)
+    "baseUrl": "./",                         // Base URL for module resolution
+    "jsx": "react-jsx",                      // If you're using React
+    "esModuleInterop": true,                 // Improves compatibility with CommonJS/ES modules
+    "forceConsistentCasingInFileNames": true  // Ensures file casing consistency
+  },
+  "include": [
+    "src/**/*.js"  // Adjust the path to match your project structure
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
